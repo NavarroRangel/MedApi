@@ -1,7 +1,9 @@
 package med.voll.api.medicos.Controllers;
 
+import med.voll.api.endereco.Model.EnderecoModel;
 import med.voll.api.medicos.DTO.DadosCadastroMedico;
 import med.voll.api.medicos.MedicoRepository;
+import med.voll.api.medicos.Model.MedicoModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +19,7 @@ public class MedicoController {
 
     @PostMapping("/cadastrar")
     public void cadastrarMedico(@RequestBody DadosCadastroMedico dadosMedico){
-
+        medicoRepository.save(new MedicoModel(dadosMedico));
     }
 
 }
