@@ -1,4 +1,4 @@
-package med.voll.api.Controllers;
+package med.voll.api.medicos.Controllers;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
