@@ -12,7 +12,7 @@ public class MedicoController {
 
     @PostMapping("/criar")
     public void cadastrar(@RequestBody DadosCadastroMedico dadosMedico){
-        System.out.println(dadosMedico);
+
     }
 
 }

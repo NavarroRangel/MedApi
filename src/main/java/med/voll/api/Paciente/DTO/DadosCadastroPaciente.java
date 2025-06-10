@@ -1,6 +1,6 @@
 package med.voll.api.Paciente.DTO;
 
-import med.voll.api.endereco.Model.DadosEndereco;
+import med.voll.api.endereco.DTO.DadosEndereco;
 
 public record DadosCadastroPaciente(String nome,
                                     String email,
