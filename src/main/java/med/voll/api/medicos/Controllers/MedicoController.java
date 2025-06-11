@@ -1,5 +1,6 @@
 package med.voll.api.medicos.Controllers;
 
+import jakarta.transaction.Transactional;
 import med.voll.api.endereco.Model.EnderecoModel;
 import med.voll.api.medicos.DTO.DadosCadastroMedico;
 import med.voll.api.medicos.MedicoRepository;
@@ -18,6 +19,7 @@ public class MedicoController {
     private MedicoRepository medicoRepository;
 
     @PostMapping("/cadastrar")
+    @Transactional
     public void cadastrarMedico(@RequestBody DadosCadastroMedico dadosMedico){
         medicoRepository.save(new MedicoModel(dadosMedico));
     }
