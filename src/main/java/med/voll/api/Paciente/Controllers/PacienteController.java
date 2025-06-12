@@ -15,7 +15,7 @@ public class PacienteController {
 
     @PostMapping("/cadastrar")
     public void cadastrar(@RequestBody DadosCadastroPaciente dadosPaciente){
-        System.out.println(dadosPaciente);
+
     }
 
 }

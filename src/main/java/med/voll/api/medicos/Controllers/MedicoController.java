@@ -3,7 +3,7 @@ package med.voll.api.medicos.Controllers;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import med.voll.api.medicos.DTO.DadosCadastroMedico;
-import med.voll.api.medicos.MedicoRepository;
+import med.voll.api.medicos.Repository.MedicoRepository;
 import med.voll.api.medicos.Model.MedicoModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
