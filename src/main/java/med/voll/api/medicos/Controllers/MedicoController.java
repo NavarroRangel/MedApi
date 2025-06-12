@@ -1,7 +1,6 @@
 package med.voll.api.medicos.Controllers;
 
 import jakarta.transaction.Transactional;
-import med.voll.api.endereco.Model.EnderecoModel;
 import med.voll.api.medicos.DTO.DadosCadastroMedico;
 import med.voll.api.medicos.MedicoRepository;
 import med.voll.api.medicos.Model.MedicoModel;
